@@ -138,8 +138,8 @@ class Contact
 
 $profile = new Profile();
 
-$profile->setOrganizeName('MODERN ARCHITECTURAL DESIGN');
-$profile->setCompanyName('Kkonstruction Solutions Ltd');
+$profile->setOrganizeName('');
+$profile->setCompanyName('K konstruction Solutions Ltd');
 $profile->setOwnerName('Paul Aubin');
 $profile->setLogo('images/logo.png');
 
@@ -160,13 +160,9 @@ $contact->setAddress('country:Kenya, City : Nairobi Street:Kangundo Road House: 
 class AboutUs
 {
 
-    private $aboutUs = '<p><span style="color: #ff6600;"><strong>Modern architectural design</strong></span> <span style="color: #333333;">including (3DModelling and Free-interior designing)</span></p>
-<ul>
-<li><span style="color: #333333;"> Structural design and detailing</span></li>
-<li><span style="color: #333333;">BOQ (estimation and costing)</span></li>
-<li><span style="color: #333333;">General Construction with Consultants.</span></li>
-<li><span style="color: #333333;">Engineering Software shortcourses</span></li>
-</ul>';
+    private $aboutUs = '<p><span style="color: #ff6600;"><strong>K konstruction solutions</strong></span> <span style="color: #333333;">including (3DModelling and Free-interior designing)   is behind Some projects that maybe you’ve appreciated or been to, but never thought of how they came to be. From stunning Modern architectural designs with Free-interior and 3D video animations of Residential buildings, apartments and churches built and to be build from the ground up to remodeled Residential buildings and General Constructions.<br> We were there in hard hats. These days, we’re both architects and builders because increasingly that is what our clients ask for ,Only their vision delivered from paper to structure. It’s more than a construction project, it’s a creative endeavor. Something new on the K konstruction that we’re all proud to put our names on Designed and  Built. <br>Through the knowledge and experience we have in designing, we offer trainings in Engineering softwares to Students/Person involved in Construction industry.</span></p>
+
+';
 
     function setAboutUs($aboutUs)
     {
@@ -237,7 +233,7 @@ $service->setServices('555');
 //Share Link
 $shareLink = new ShareLink();
 
-$shareLink->setShareLink('http://wedigitizeu.com/dvcard/abc-study-centre');
+$shareLink->setShareLink('http://wedigitizeu.com/dvcard/KKONSTRUCTION_SOLUTIONS_LTD');
 
 ?>
       <!-- PHP Code Ends -->
@@ -263,7 +259,18 @@ $shareLink->setShareLink('http://wedigitizeu.com/dvcard/abc-study-centre');
          <meta name = "title" content="<?php echo $profile->getCompanyName(); ?>">
          <meta name = "author" content="WDU"> 
          <meta name = "keywords" content="Digital Visiting Card, Visiting Card, Online visiting card">
-         <meta name = "description" content="ABC is committed to the overall success of students. We assure students to provide an amazing success through the correct inputs of knowledge">
+         <meta name = "description" content="K konstruction solutions
+ is behind Some projects
+ that maybe you’ve appreciated 
+or been to, but never 
+thought of how they came to be.
+ From stunning Modern architectural 
+designs with Free-interior and 
+3D video animations of Residential 
+buildings, apartments and churches 
+built and to be build from the ground up
+ to remodeled Residential buildings 
+and General Constructions. ">
          <meta name = "language" content="English">
          <meta http-equiv = "Content-Type" content="text/html; UTF-8">
             <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
@@ -379,7 +386,7 @@ $shareLink->setShareLink('http://wedigitizeu.com/dvcard/abc-study-centre');
             </div>
          </div>
          <div class="dis_flex">
-            <a href="contact_abc_center.vcf?id=117">
+            <a href="contact_KKONSTRUCTION.vcf?id=117">
                <div class="big_btns">Save to Contacts <i class="fa fa-download"></i></div>
             </a>
             <div class="big_btns" id="share_box_pop">Share <i class="fa fa-share-alt"></i></div>
@@ -483,6 +490,50 @@ echo $aboutUs->getAboutUs();
        <div class="img_gall">
             <img src="images/4.jpg">
          </div>
+         <div class="img_gall">
+            <img src="images/22.jpg">
+         </div>
+         <div class="img_gall">
+            <img src="images/7.jpg">
+         </div>
+         <div class="img_gall">
+            <img src="images/8.jpg">
+         </div>
+         <div class="img_gall">
+            <img src="images/9.jpg">
+         </div>
+         <div class="img_gall">
+            <img src="images/10.jpg">
+         </div>
+
+              <div class="img_gall">
+            <img src="images/11.jpg">
+         </div>
+         <div class="img_gall">
+            <img src="images/12.jpg">
+         </div>
+
+         <div class="img_gall">
+            <img src="images/13.jpg">
+         </div>
+       <div class="img_gall">
+            <img src="images/14.jpg">
+         </div>
+         <div class="img_gall">
+            <img src="images/16.jpg">
+         </div>
+         <div class="img_gall">
+            <img src="images/17.jpg">
+         </div>
+         <div class="img_gall">
+            <img src="images/18.jpg">
+         </div>
+         <div class="img_gall">
+            <img src="images/21.jpg">
+         </div>
+         <div class="img_gall">
+            <img src="images/20.jpg">
+         </div>
       </div>
 
 
@@ -504,7 +555,7 @@ echo $aboutUs->getAboutUs();
          <br>
          <br>
          <br>
-               <a href="<?php echo $genralInfo->getWduUrl(); ?>"><div class="create_card_btn">We Digitize U || Digital Support and Services || 2021</div></a>
+               <a href="https://wedigitizeu.com/"><div class="create_card_btn">We Digitize U || Digital Support and Services || 2021</div></a>
 
          <style>
             .create_card_btn {
@@ -531,8 +582,8 @@ echo $aboutUs->getAboutUs();
             <div class="menu_container">
                <div class="menu_item" onclick="location.href='#home'"><i class="fa fa-home"></i> Home</div>
                <div class="menu_item" onclick="location.href='#about_us'"><i class="fa fa-briefcase"></i>About Us</div>
-               <div class="menu_item" onclick="location.href='#product_services'"><i class="fa fa-ticket"></i>Courses</div>
-               <div class="menu_item" onclick="location.href='#study_material'"><i class="fa fa-book"></i>Study Material </div> 
+               <!-- <div class="menu_item" onclick="location.href='#product_services'"><i class="fa fa-ticket"></i>Courses</div> -->
+       <!--         <div class="menu_item" onclick="location.href='#study_material'"><i class="fa fa-book"></i>Study Material </div>  -->
                <div class="menu_item" onclick="location.href='#gallery'"><i class="fa fa-image"></i>Gallery</div>
                <div class="menu_item" onclick="location.href='#youtube_video'"><i class="fa fa-video-camera"></i>Youtube Videos</div>
                <!-- <div class="menu_item" onclick="location.href='#payment'"><i class="fa fa-money"></i>Payment</div> -->
