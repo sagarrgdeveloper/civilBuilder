@@ -324,7 +324,7 @@ $shareLink->setShareLink('http://wedigitizeu.com/dvcard/abc-study-centre');
             <a href="tel:<?php echo $contact->getWhatsAppNo(); ?>" target="_blank">
                <div class="link_btn"><i class="fa fa-phone"></i> Call</div>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=<?php echo $contact->getWhatsAppNo(); ?>&amp;text=Hi%2C+ABC+Study+Centre" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=<?php echo $contact->getWhatsAppNo(); ?>&amp;text=Paul+Aubin" target="_blank">
                <div class="link_btn"><i class="fa fa-whatsapp"></i> WhatsApp</div>
             </a>
             <a href="<?php echo $contact->getLocation(); ?>" target="_blank">
