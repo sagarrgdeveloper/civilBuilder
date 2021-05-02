@@ -1,175 +1,245 @@
 <!-- PHP Code -->
-      <?php
-         class GenralInfo{
-         
-         private $companyName = "Kkonstruction Solutions Ltd" ;
-         private $firstName = "Eng.Paul Aubin ";
-         private $lastName = " ";
-         private $designation = "";
-         private $website = "http://www.abcstudycentre.com";
-        
-         private $facebookLink = "11";
-         private $instagramLink = "12";
-         private $twitterLink = "13";
-         private $linkedlnLink = "14";
-         private $youtubeChannelLink = "15";
-         private $logoUrl = "16";
+<?php
+class Profile
+{
 
-         // WDU info
-        private $wduUrl = "https://wedigitizeu.com/index.html";
+    private $organizeName;
+    private $companyName;
+    private $ownerName;
+    private $logo;
 
-        function setWduUrl($wduUrl) { $this->wduUrl = $wduUrl; }
-       function getWduUrl() { return $this->wduUrl; }
-         
-         function setCompanyName($companyName) { $this->companyName = $companyName; }
-         function getCompanyName() { return $this->companyName; }
-         function setFirstName($firstName) { $this->firstName = $firstName; }
-         function getFirstName() { return $this->firstName; }
-         function setLastName($lastName) { $this->lastName = $lastName; }
-         function getLastName() { return $this->lastName; }
-         function setDesignation($designation) { $this->designation = $designation; }
-         function getDesignation() { return $this->designation; }
-         function setPrimaryPhoneNo($primaryPhoneNo) { $this->primaryPhoneNo = $primaryPhoneNo; }
-         function getPrimaryPhoneNo() { return $this->primaryPhoneNo; }
-         function setSecondaryPhoneNo($secondaryPhoneNo) { $this->secondaryPhoneNo = $secondaryPhoneNo; }
-         function getSecondaryPhoneNo() { return $this->secondaryPhoneNo; }
-         function setWhatsAppNo($whatsAppNo) { $this->whatsAppNo = $whatsAppNo; }
-         function getWhatsAppNo() { return $this->whatsAppNo; }
-         function setAddess($addess) { $this->addess = $addess; }
-         function getAddess() { return $this->addess; }
-         function setEmailId($emailId) { $this->emailId = $emailId; }
-         function getEmailId() { return $this->emailId; }
-         function setWebsite($website) { $this->website = $website; }
-         function getWebsite() { return $this->website; }
-         function setGoogleMap($googleMap) { $this->googleMap = $googleMap; }
-         function getGoogleMap() { return $this->googleMap; }
-         function setFacebookLink($facebookLink) { $this->facebookLink = $facebookLink; }
-         function getFacebookLink() { return $this->facebookLink; }
-         function setInstagramLink($instagramLink) { $this->instagramLink = $instagramLink; }
-         function getInstagramLink() { return $this->instagramLink; }
-         function setTwitterLink($twitterLink) { $this->twitterLink = $twitterLink; }
-         function getTwitterLink() { return $this->twitterLink; }
-         function setLinkedlnLink($linkedlnLink) { $this->linkedlnLink = $linkedlnLink; }
-         function getLinkedlnLink() { return $this->linkedlnLink; }
-         function setYoutubeChannelLink($youtubeChannelLink) { $this->youtubeChannelLink = $youtubeChannelLink; }
-         function getYoutubeChannelLink() { return $this->youtubeChannelLink; }
-         function setLogoUrl($logoUrl) { $this->logoUrl = $logoUrl; }
-         function getLogoUrl() { return $this->logoUrl; }
-   }
-         
-         class AboutUs{
-         
-         private $aboutUs ='<p style="color:black">"<strong>Kkonstruction solutions Ltd"
-</strong>
-<p style="color:black"> Modern architectural design including(3DModelling and Free-interior designing) 
-.Structural design and detailing
-.BOQ (estimation and costing)
-.General Construction with Consultants.
-. Engineering Software shortcourses</strong>. "</p>
-
-';
-         
-         function setAboutUs($aboutUs) { $this->aboutUs = $aboutUs; }
-         function getAboutUs() { return $this->aboutUs; }
-         
-         }
-
-class YoutubeVideos{
-
-   private $youtubeUrl;
-
-   function setYoutubeUrl($youtubeUrl) { $this->youtubeUrl = $youtubeUrl; }
-   function getYoutubeUrl() { return $this->youtubeUrl; }
-
+    function setOrganizeName($organizeName)
+    {
+        $this->organizeName = $organizeName;
+    }
+    function getOrganizeName()
+    {
+        return $this->organizeName;
+    }
+    function setCompanyName($companyName)
+    {
+        $this->companyName = $companyName;
+    }
+    function getCompanyName()
+    {
+        return $this->companyName;
+    }
+    function setOwnerName($ownerName)
+    {
+        $this->ownerName = $ownerName;
+    }
+    function getOwnerName()
+    {
+        return $this->ownerName;
+    }
+    function setLogo($logo)
+    {
+        $this->logo = $logo;
+    }
+    function getLogo()
+    {
+        return $this->logo;
+    }
 
 }
 
-class Address {
-private $address;
-private $gMapUrl;
-private $email;
-private $mobile;
-private $area;
+class Person
+{
+    private $firstName;
+    private $lastName;
+    private $designation;
 
-function setAddress($address) { $this->address = $address; }
-function getAddress() { return $this->address; }
-function setGMapUrl($gMapUrl) { $this->gMapUrl = $gMapUrl; }
-function getGMapUrl() { return $this->gMapUrl; }
-function setEmail($email) { $this->email = $email; }
-function getEmail() { return $this->email; }
-function setMobile($mobile) { $this->mobile = $mobile; }
-function getMobile() { return $this->mobile; }
-function setArea($area) { $this->area = $area; }
-function getArea() { return $this->area; }
-
+    function setFirstName($firstName)
+    {
+        $this->firstName = $firstName;
+    }
+    function getFirstName()
+    {
+        return $this->firstName;
+    }
+    function setLastName($lastName)
+    {
+        $this->lastName = $lastName;
+    }
+    function getLastName()
+    {
+        return $this->lastName;
+    }
+    function setDesignation($designation)
+    {
+        $this->designation = $designation;
+    }
+    function getDesignation()
+    {
+        return $this->designation;
+    }
 
 }
-class Services{
-  private $services;
 
-function setServices($services) { $this->services = $services; }
-function getServices() { return $this->services; }
+class Contact
+{
+    private $whatsAppNo;
+    private $mobileNumber;
+    private $location;
+    private $email;
+    private $website;
+    private $address;
+
+    function setWhatsAppNo($whatsAppNo)
+    {
+        $this->whatsAppNo = $whatsAppNo;
+    }
+    function getWhatsAppNo()
+    {
+        return $this->whatsAppNo;
+    }
+    function setMobileNumber($mobileNumber)
+    {
+        $this->mobileNumber = $mobileNumber;
+    }
+    function getMobileNumber()
+    {
+        return $this->mobileNumber;
+    }
+    function setLocation($location)
+    {
+        $this->location = $location;
+    }
+    function getLocation()
+    {
+        return $this->location;
+    }
+    function setEmail($email)
+    {
+        $this->email = $email;
+    }
+    function getEmail()
+    {
+        return $this->email;
+    }
+    function setWebsite($website)
+    {
+        $this->website = $website;
+    }
+    function getWebsite()
+    {
+        return $this->website;
+    }
+    function setAddress($address)
+    {
+        $this->address = $address;
+    }
+    function getAddress()
+    {
+        return $this->address;
+    }
+
 }
-class ShareLink{
-private $shareLink;
 
-function setShareLink($shareLink) { $this->shareLink = $shareLink; }
-function getShareLink() { return $this->shareLink; }
+$profile = new Profile();
+
+$profile->setOrganizeName('MODERN ARCHITECTURAL DESIGN');
+$profile->setCompanyName('Kkonstruction Solutions Ltd');
+$profile->setOwnerName('Paul Aubin');
+$profile->setLogo('images/logo.png');
+
+$person = new Person();
+
+$person->setFirstName('Paul');
+$person->setLastName('Aubin');
+$person->setDesignation('Engineer');
+
+$contact = new Contact();
+$contact->setWhatsAppNo('+254 727017220');
+$contact->setMobileNumber('+254727017220');
+$contact->setLocation('');
+$contact->setEmail('aubindeco@gmail.com');
+$contact->setWebsite('#');
+$contact->setAddress('country:Kenya, City : Nairobi Street:Kangundo Road House: First floor, Governor Plaza , Suite No.C8');
+
+class AboutUs
+{
+
+    private $aboutUs = '<p><span style="color: #ff6600;"><strong>Modern architectural design</strong></span> <span style="color: #333333;">including (3DModelling and Free-interior designing)</span></p>
+<ul>
+<li><span style="color: #333333;"> Structural design and detailing</span></li>
+<li><span style="color: #333333;">BOQ (estimation and costing)</span></li>
+<li><span style="color: #333333;">General Construction with Consultants.</span></li>
+<li><span style="color: #333333;">Engineering Software shortcourses</span></li>
+</ul>';
+
+    function setAboutUs($aboutUs)
+    {
+        $this->aboutUs = $aboutUs;
+    }
+    function getAboutUs()
+    {
+        return $this->aboutUs;
+    }
 
 }
 
+class YoutubeVideos
+{
 
-         
-         $genralInfo = new GenralInfo();
-         $aboutUs = new AboutUs();
-         //Youtube Video Section
-         $youtubeVideo1 = new YoutubeVideos();
-         $youtubeVideo1->setYoutubeUrl("https://www.youtube.com/embed/tvwjt25IJAs");
-         $youtubeVideo2 = new YoutubeVideos();
-         $youtubeVideo2->setYoutubeUrl("https://www.youtube.com/embed/PArN-9gkS30");
-         // Mathikere Address
-         $mattikereAddress = new Address();
-      
-         $mattikereAddress->setAddress('Address: country:Kenya, City : Nairobi
-Street:Kangundo Road
-House: First floor, Governor Plaza , Suite No.C8');
-         $mattikereAddress->setEmail('aubindeco@gmail.com');
-         $mattikereAddress->setArea('Nairobi');
-         $mattikereAddress->setMobile('+254727017220');
-         $mattikereAddress->setGMapUrl('https://g.page/abcstudycenter?share');
+    private $youtubeUrl;
 
-         
+    function setYoutubeUrl($youtubeUrl)
+    {
+        $this->youtubeUrl = $youtubeUrl;
+    }
+    function getYoutubeUrl()
+    {
+        return $this->youtubeUrl;
+    }
 
-         //Basaveshwara Nagr Address
-         $basveshwaraAddress = new Address();
+}
 
-         $basveshwaraAddress->setAddress('');
-         $basveshwaraAddress->setEmail('');
-         $basveshwaraAddress->setArea('');
-         $basveshwaraAddress->setMobile('');
-         $basveshwaraAddress->setGMapUrl('');
+class Services
+{
+    private $services;
 
-         //Services
-         $service = new Services();
-         $service->setServices('<p style="text-align: left;"><strong><span class="elementor-icon-list-text">&nbsp;IX, X (STATE, CBSE, ICSE)</span></strong></p>
-<p style="text-align: left;"><strong><span class="elementor-icon-list-text">&nbsp;I &amp; II PUC COMMERCE with CA-CPT</span></strong></p>
-<p style="text-align: left;"><strong><span class="elementor-icon-list-text">&nbsp;I &amp; II PUC SCIENCE<br />&nbsp;(PCMB / PCMCs / PCME)</span></strong></p>
-<p style="text-align: left;"><strong><span class="elementor-icon-list-text">&nbsp;With JEE / NEET / K-CET / <span style="color: #ff6600;">PRACTICLES</span></span></strong></p>');
-              
-         //Share Link
-         $shareLink = new ShareLink();
+    function setServices($services)
+    {
+        $this->services = $services;
+    }
+    function getServices()
+    {
+        return $this->services;
+    }
+}
+class ShareLink
+{
+    private $shareLink;
 
-         $shareLink->setShareLink('http://wedigitizeu.com/dvcard/abc-study-centre');
-         
-         
-         echo $genralInfo->getFacebookLink();
-         echo $genralInfo->getTwitterLink();
-         echo $genralInfo->getLinkedlnLink();
-         echo $genralInfo->getYoutubeChannelLink();
-         echo $genralInfo->getLogoUrl();
+    function setShareLink($shareLink)
+    {
+        $this->shareLink = $shareLink;
+    }
+    function getShareLink()
+    {
+        return $this->shareLink;
+    }
 
+}
 
-         ?>
+$aboutUs = new AboutUs();
+//Youtube Video Section
+$youtubeVideo1 = new YoutubeVideos();
+$youtubeVideo1->setYoutubeUrl("https://www.youtube.com/embed/tvwjt25IJAs");
+$youtubeVideo2 = new YoutubeVideos();
+$youtubeVideo2->setYoutubeUrl("https://www.youtube.com/embed/PArN-9gkS30");
+
+//Services
+$service = new Services();
+$service->setServices('555');
+
+//Share Link
+$shareLink = new ShareLink();
+
+$shareLink->setShareLink('http://wedigitizeu.com/dvcard/abc-study-centre');
+
+?>
       <!-- PHP Code Ends -->
 
 
@@ -189,8 +259,8 @@ House: First floor, Governor Plaza , Suite No.C8');
         
 
          <!-- HTML Meta Tags -->
-         <title><?php  echo $genralInfo->getCompanyName();?></title>
-         <meta name = "title" content="<?php  echo $genralInfo->getCompanyName();?>">
+         <title><?php echo $profile->getCompanyName(); ?></title>
+         <meta name = "title" content="<?php echo $profile->getCompanyName(); ?>">
          <meta name = "author" content="WDU"> 
          <meta name = "keywords" content="Digital Visiting Card, Visiting Card, Online visiting card">
          <meta name = "description" content="ABC is committed to the overall success of students. We assure students to provide an amazing success through the correct inputs of knowledge">
@@ -241,81 +311,62 @@ House: First floor, Governor Plaza , Suite No.C8');
          <div class="card_content">
             <img src="images/logo.jpg">
                <div class="card_content2">
-           <h2 style="font-size:16px;color: #dedede;">Modern architectural design.</h2>
-            <h2><?php echo $genralInfo->getCompanyName();?></h2>
+           <h2 style="font-size:16px;color: #dedede;"><?php echo $profile->getOrganizeName(); ?></h2>
+            <h2><?php echo $profile->getCompanyName(); ?></h2>
           <!--   <p><span>SSLC | </span><span> CBSE | </span><span>PUC | </span><span>NEET | </span>
                <span>JEE |</span><span> KCET</span>
             </p><br> -->
-            <p><?php echo $genralInfo->getFirstName()." ".$genralInfo->getLastName(); ?></p>
-            <p><?php echo $genralInfo->getDesignation(); ?></p>
+            <p><?php echo $person->getFirstName() . " " . $person->getLastName(); ?></p>
+            <p><?php echo $person->getDesignation(); ?></p>
             <!-- 
                -->
          </div>
          <div class="dis_flex">
-            <a href="tel:<?php echo  $mattikereAddress->getMobile();?>" target="_blank">
+            <a href="tel:<?php echo $contact->getWhatsAppNo(); ?>" target="_blank">
                <div class="link_btn"><i class="fa fa-phone"></i> Call</div>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=<?php echo '+91'.$mattikereAddress->getMobile();?>&amp;text=Hi%2C+ABC+Study+Centre" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=<?php echo $contact->getWhatsAppNo(); ?>&amp;text=Hi%2C+ABC+Study+Centre" target="_blank">
                <div class="link_btn"><i class="fa fa-whatsapp"></i> WhatsApp</div>
             </a>
-            <a href="<?php echo $mattikereAddress->getGMapUrl(); ?>" target="_blank">
-               <div class="link_btn"><i class="fa fa-map-marker"></i> <?php echo $mattikereAddress->getArea();?></div>
+            <a href="<?php echo $contact->getLocation(); ?>" target="_blank">
+               <div class="link_btn"><i class="fa fa-map-marker"></i> <?php echo 'Location' ?></div>
             </a>
-           <!--  <a href="<?php echo $basveshwaraAddress->getGMapUrl(); ?>" target="_blank">
-               <div class="link_btn"><i class="fa fa-map-marker"></i> <?php echo $basveshwaraAddress->getArea();?> </div>
-            </a> -->
-            <a href="Mailto:<?php echo $mattikereAddress->getEmail();?>" target="_blank">
+           
+            <a href="Mailto:<?php echo $contact->getEmail(); ?>" target="_blank">
                <div class="link_btn"><i class="fa fa-envelope"></i> Mail</div>
             </a>
-            <a href="<?php echo $genralInfo->getWebsite();?>" target="_blank">
+            <a href="<?php echo $contact->getWebsite(); ?>" target="_blank">
                <div class="link_btn"><i class="fa fa-globe"></i> Website</div>
             </a>
          </div>
          
          <div class="contact_details">
-            <strong>Branch : <span style='color: #ff6600;'><?php echo $mattikereAddress->getArea();?></span></strong>
+            <strong style='color: #ff6600;'>Address :</strong>
             <div class="contact_d">
                <i class="fa fa-phone" aria-hidden="true"></i>
-               <p><?php echo  $mattikereAddress->getMobile();?></p>
+               <p><?php echo $contact->getMobileNumber(); ?></p>
             </div>
             <div class="contact_d">
                <i class="fa fa-map-marker"></i>
                <p>
-                 <?php echo  $mattikereAddress->getAddress();;?>                           
+                 <?php echo $contact->getAddress(); ?>                           
                </p>
             </div>
             <div class="contact_d">
                <i class="fa fa-envelope"></i>
-               <p><?php echo  $mattikereAddress->getEmail();?></p>
+               <p><?php echo $contact->getEmail(); ?></p>
             </div>
             
          </div>
 
-        <!--  <div class="contact_details">
-            <strong>Branch : <span style='color: #ff6600;'><?php echo $basveshwaraAddress->getArea();?></span></strong>
-            <div class="contact_d">
-               <i class="fa fa-phone" aria-hidden="true"></i>
-            <p><?php echo  $basveshwaraAddress->getMobile();?></p>
-            </div>
-            <div class="contact_d">
-               <i class="fa fa-map-marker"></i>
-               <p>
-                 <?php echo  $basveshwaraAddress->getAddress();;?>                           
-               </p>
-            </div>
-            <div class="contact_d">
-               <i class="fa fa-envelope"></i>
-               <p><?php echo  $basveshwaraAddress->getEmail();?></p>
-            </div>
-            
-         </div> -->
+        
 
 
          <div class="dis_flex">
             <div class="share_wtsp">
                <form action="https://api.whatsapp.com/send" id="wtsp_form" target="_blank">
                   <input type="text"  name="phone" placeholder="WhatsApp Number with Country code  " value="+91">
-                  <input type="hidden" name="text" value="<?php echo $shareLink->getShareLink();?>">
+                  <input type="hidden" name="text" value="<?php echo $shareLink->getShareLink(); ?>">
                   <div class="wtsp_share_btn" onclick="subForm()">Share on <i class="fa fa-whatsapp"></i> </div>
                </form>
                <script>
@@ -336,25 +387,25 @@ House: First floor, Governor Plaza , Suite No.C8');
             <div class="share_box">
                <div class="close" id="close_sharer">&times;</div>
                <p>Share My Digital Card </p>
-               <a href="https://api.whatsapp.com/send?text=<?php echo  $shareLink->getShareLink(); ?>">
+               <a href="https://api.whatsapp.com/send?text=<?php echo $shareLink->getShareLink(); ?>">
                   <div class="shar_btns">
                      <i class="fa fa-whatsapp" id="whatsapp2"  target="_blank"></i>
                      <p>WhatsApp</p>
                   </div>
                </a>
-               <a href="sms:?body=<?php echo  $shareLink->getShareLink(); ?>" target="_blank">
+               <a href="sms:?body=<?php echo $shareLink->getShareLink(); ?>" target="_blank">
                   <div class="shar_btns">
                      <i class="fa fa-comment" ></i>
                      <p>SMS</p>
                   </div>
                </a>
-               <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo  $shareLink->getShareLink(); ?>" target="_blank">
+               <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $shareLink->getShareLink(); ?>" target="_blank">
                   <div class="shar_btns">
                      <i class="fa fa-facebook" ></i>
                      <p>Facebook</p>
                   </div>
                </a>
-               <a href="https://twitter.com/intent/tweet?text=<?php echo  $shareLink->getShareLink(); ?>" target="_blank">
+               <a href="https://twitter.com/intent/tweet?text=<?php echo $shareLink->getShareLink(); ?>" target="_blank">
                   <div class="shar_btns">
                      <i class="fa fa-twitter"></i>
                      <p>Twitter</p>
@@ -366,7 +417,7 @@ House: First floor, Governor Plaza , Suite No.C8');
                      <p>Instagram</p>
                   </div>
                </a>
-               <a href="https://www.linkedin.com/cws/share?url=<?php echo  $shareLink->getShareLink(); ?> " target="_blank">
+               <a href="https://www.linkedin.com/cws/share?url=<?php echo $shareLink->getShareLink(); ?> " target="_blank">
                   <div class="shar_btns">
                      <i class="fa fa-linkedin"></i>
                      <p>Linkedin</p>
@@ -394,26 +445,26 @@ House: First floor, Governor Plaza , Suite No.C8');
       <div class="card2" id="about_us">
          <h3>About Us</h3>
          <?php
-            echo $aboutUs->getAboutUs();
-            
-            ?>
+echo $aboutUs->getAboutUs();
+
+?>
       </div>
 
-      <div class="card2" id="product_services">
+      <!-- <div class="card2" id="product_services">
          <h3>We Conduct Coaching Classes for:</h3>
         
-           <span style="color:black"> <?php echo $service->getServices();?></span> 
+           <span style="color:black"> <?php echo $service->getServices(); ?></span> 
             
             
-      </div>
+      </div> -->
 
 
-      <!------------shopping online-------------------------->
+     
       <!--------------youtube videos--------------------------->  
       <div class="card2" id="youtube_video">
          <h3>Youtube Videos</h3>
         
-         <iframe src="<?php echo  $youtubeVideo1->getYoutubeUrl(); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
+         <iframe src="<?php echo $youtubeVideo1->getYoutubeUrl(); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
       </div>
       </div>
       <!----------image gallery----------------------->     
@@ -435,29 +486,7 @@ House: First floor, Governor Plaza , Suite No.C8');
          </div>
       </div>
 
-       <!----------Study material----------------------->     
-<!--       <div class="card2" id="study_material">
-         <h3>Study Material</h3>
 
-         <div class="img_gall">
-            <img src="images/study4.jpg">
-         </div>
-
-         <div class="img_gall">
-            <img src="images/study2.jpg">
-         </div>
-
-           <div class="img_gall">
-            <img src="images/study3.jpg">
-         </div>
-
-           
-
-           <div class="img_gall">
-            <img src="images/study5.jpg">
-         </div>
-         
-      </div> -->
 
       
       <!----------payment info----------------------->   
