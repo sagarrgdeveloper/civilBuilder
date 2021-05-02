@@ -309,17 +309,16 @@ $shareLink->setShareLink('http://wedigitizeu.com/dvcard/abc-study-centre');
       <div class="card" id="home" >
          <!-- <div class="view_counter"><i class="fa fa-eye"></i> <br>36</div> -->
          <div class="card_content">
-            <img src="images/logo.jpg">
-               <div class="card_content2">
-           <h2 style="font-size:16px;color: #dedede;"><?php echo $profile->getOrganizeName(); ?></h2>
-            <h2><?php echo $profile->getCompanyName(); ?></h2>
-          <!--   <p><span>SSLC | </span><span> CBSE | </span><span>PUC | </span><span>NEET | </span>
-               <span>JEE |</span><span> KCET</span>
-            </p><br> -->
+          <center> <img src="images/logo.jpg"></center>
+           
+              <div class="card_content2">
+                <center>
+           <h2 style="font-size:14px;color:#ff6600;"><?php echo $profile->getOrganizeName(); ?></h2>
+            <h2 style="font-size:17px"><?php echo $profile->getCompanyName(); ?></h2>
+          
             <p><?php echo $person->getFirstName() . " " . $person->getLastName(); ?></p>
             <p><?php echo $person->getDesignation(); ?></p>
-            <!-- 
-               -->
+          </center>
          </div>
          <div class="dis_flex">
             <a href="tel:<?php echo $contact->getWhatsAppNo(); ?>" target="_blank">
@@ -365,7 +364,7 @@ $shareLink->setShareLink('http://wedigitizeu.com/dvcard/abc-study-centre');
          <div class="dis_flex">
             <div class="share_wtsp">
                <form action="https://api.whatsapp.com/send" id="wtsp_form" target="_blank">
-                  <input type="text"  name="phone" placeholder="WhatsApp Number with Country code  " value="+91">
+                  <input type="text"  name="phone" placeholder="WhatsApp No. with Country code  " value="">
                   <input type="hidden" name="text" value="<?php echo $shareLink->getShareLink(); ?>">
                   <div class="wtsp_share_btn" onclick="subForm()">Share on <i class="fa fa-whatsapp"></i> </div>
                </form>
